@@ -1,4 +1,6 @@
- <h2>Create User</h2>
+<button class="btn btn-danger" [routerLink]="['/home']" routerLinkActive="router-link-active" > Home</button>
+<br/>
+<h2>Create User</h2>
 
  <form [formGroup]='userFormGroup' (ngSubmit)='addUser()'  novalidate >
   <input class= "form-control" type="text" formControlName='name' placeholder="Enter Name"   />
@@ -21,3 +23,5 @@
 
     </tr>
   </table>
+
+  
